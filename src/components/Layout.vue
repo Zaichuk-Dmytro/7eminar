@@ -54,7 +54,7 @@ export default {
   async created() {
     this.data = await import ('../api/data.json').then( res => res.default)
     this.filtred = this.data.slice(0)
-    this.mobileView
+    
     window.addEventListener('resize', this.updateWidth)
     this.updateWidth()
   },
@@ -87,6 +87,9 @@ export default {
       this.width = window.innerWidth
     },
     show() {
+      if (!this.mobileView) {
+        return
+      }
       if ( this.showMenu) {
         this.$root.$emit('hideOverlay')        
       } else {
