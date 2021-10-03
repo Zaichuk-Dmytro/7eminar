@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body, #app {
+  margin: 0;
+  background-color: #e8e8e8;
+  
+}
+
+button, input{
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
