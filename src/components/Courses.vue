@@ -40,7 +40,7 @@ export default {
 <style lang="scss" scoped>
   .wrapper__courses{
     padding: 45px 30px;
-        width: 890px;
+    width: 895px;
 
     .courses_header{
       display: flex;
