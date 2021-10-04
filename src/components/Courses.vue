@@ -40,6 +40,7 @@ export default {
 <style lang="scss" scoped>
   .wrapper__courses{
     padding: 45px 30px;
+    max-width: 895px;
     width: 895px;
 
     .courses_header{
@@ -49,6 +50,7 @@ export default {
       color: #232323;
       font-size: 25px;
       padding-bottom: 35px;
+      padding-right: 15px;
 
       .header-actions{
         display: flex;
@@ -93,6 +95,20 @@ export default {
       
     }
   }
+@media only screen and (max-width: 895px) {
+  .wrapper__courses{
+    max-width: 618px;
+  }
+}
+@media only screen and (max-width: 616px) {
+  .wrapper__courses{
+    max-width: 485px;
+
+    .curses__list{
+      justify-content: center;
+    }
+  }
+}
 
 @media only screen and (max-width: 500px) {
   .wrapper__courses {
@@ -106,6 +122,7 @@ export default {
       .header-actions{
         justify-content: center;
         align-items: center;
+        flex-direction: column;
 
         .mode__btns {
           margin: 24px auto;

@@ -129,6 +129,7 @@ export default {
           width: 1170px;
           margin: 0 auto;
 
+
           .menu__btn{ 
             margin-right: 15px;
             height: 34px; 
@@ -172,6 +173,12 @@ export default {
   }
   .slide-menu-enter, .slide-menu-leave-to  {
     left: -1000px;
+  }
+  @media only screen and (max-width: 1185px) {
+    .layout .app-header__wrapper .app-header{
+      max-width: 835px;
+      margin: 0 auto;
+    }
   }
 </style>
 <style >
